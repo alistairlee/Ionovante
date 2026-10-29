@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ionovante Vanta — Luxury Electric SUV</title>
+    <link rel="stylesheet" href="https://use.typekit.net/fwk2fxj.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="nav" id="nav" role="banner">
+      <a href="index.html" class="nav__brand-link" aria-label="Ionovante Home">
+        <img src="img/Ionovante_Logo_White.svg" alt="" class="nav__logo" />
+        <span class="nav__brand-name">Ionovante</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="aeros.html" class="nav__link">Aeros</a>
+        <a href="vanta.html" class="nav__link">Vanta</a>
+        <a href="https://learningmanager.adobe.com/ionovante" class="nav__link" target="_blank" rel="noopener noreferrer" data-learning-portal-link data-default-url="https://learningmanager.adobe.com/ionovante" data-stage-url="http://ionovante.stage4.adobelearningmanager.com/">Learning Portal</a>
+      </nav>
+      <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="vehicle-hero" aria-labelledby="vanta-hero-title">
+        <img src="img/vanta-sideprofile.webp" alt="" class="vehicle-hero__bg" />
+        <div class="vehicle-hero__overlay" aria-hidden="true"></div>
+        <div class="vehicle-hero__content">
+          <h1 id="vanta-hero-title" class="vehicle-hero__title">Ionovante Vanta</h1>
+          <p class="vehicle-hero__tagline">The full-size SUV, reimagined.</p>
+        </div>
+      </section>
+
+      <section class="vehicle-wide" aria-hidden="true">
+        <img src="img/vanta-hero-wide.webp" alt="" class="vehicle-wide__img" />
+      </section>
+
+      <section class="section section--dark overview" aria-labelledby="vanta-overview-title">
+        <div class="overview__specs reveal">
+          <h2 id="vanta-overview-title" class="section__title" style="margin-bottom: var(--space-6);">Specifications</h2>
+          <div class="overview__spec"><span class="overview__spec-label">Range</span><span class="overview__spec-value">Up to 360 mi</span></div>
+          <div class="overview__spec"><span class="overview__spec-label">0–60 mph</span><span class="overview__spec-value">4.8 sec</span></div>
+          <div class="overview__spec"><span class="overview__spec-label">Drivetrain</span><span class="overview__spec-value">Dual motor AWD</span></div>
+          <div class="overview__spec"><span class="overview__spec-label">Power</span><span class="overview__spec-value">520 hp</span></div>
+          <div class="overview__spec"><span class="overview__spec-label">Seating</span><span class="overview__spec-value">Up to 7</span></div>
+          <div class="overview__spec"><span class="overview__spec-label">Charging</span><span class="overview__spec-value">250 kW DC fast charge</span></div>
+        </div>
+        <div class="overview__copy reveal">
+          <h3>Bold presence. Zero compromise.</h3>
+          <p>The Vanta is the electric SUV for families and adventurers who demand space, capability, and refinement. Three rows of seating, ample cargo, and a powertrain that tows and performs without a whisper. Sustainable luxury at full scale.</p>
+        </div>
+      </section>
+
+      <section class="section gallery" aria-labelledby="vanta-gallery-title">
+        <div class="section__header reveal">
+          <h2 id="vanta-gallery-title" class="section__title">Interior</h2>
+          <p class="section__subtitle">Three rows of refinement—materials and technology that make every seat the best seat.</p>
+        </div>
+        <div class="swiper gallery-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/Interior1.webp" alt="Ionovante Vanta interior dashboard and first row" /></div>
+            <div class="swiper-slide"><img src="img/Interior2.webp" alt="Ionovante Vanta second and third row" /></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="cta-banner" aria-labelledby="vanta-cta-title">
+        <h2 id="vanta-cta-title" class="cta-banner__title">Configure yours</h2>
+        <p class="cta-banner__text">Select your Vanta trim, seating layout, and options. We’ll arrange a private showing at your convenience.</p>
+        <a href="configurator/index.htm" class="btn btn--accent">Configure Your Vehicle</a>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="footer__inner">
+        <a href="index.html" aria-label="Ionovante Home">
+          <img src="img/Ionovante_Logo_White.svg" alt="Ionovante" class="footer__logo" />
+        </a>
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="aeros.html" class="footer__link">Aeros</a>
+          <a href="vanta.html" class="footer__link">Vanta</a>
+        </nav>
+        <p class="footer__copy">© Ionovante Automotive. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        if (typeof Swiper !== 'undefined') {
+          new Swiper('.gallery-swiper', {
+            loop: true,
+            pagination: { el: '.swiper-pagination', clickable: true },
+            autoplay: { delay: 5000, disableOnInteraction: false }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

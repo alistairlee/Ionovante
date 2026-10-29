@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.typekit.net/fwk2fxj.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="application/javascript" src="js/logic.js" defer></script>
+    <title>Ionovante Aeros | Build & Configure</title>
+  </head>
+  <body>
+    <header class="nav is-scrolled" id="nav" role="banner">
+      <a href="../index.html" class="nav__brand-link" aria-label="Ionovante Home">
+        <img src="../img/Ionovante_Logo_White.svg" alt="" class="nav__logo" />
+        <span class="nav__brand-name">Ionovante</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Main navigation">
+        <a href="../index.html" class="nav__link">Home</a>
+        <a href="../aeros.html" class="nav__link">Aeros</a>
+        <a href="../vanta.html" class="nav__link">Vanta</a>
+        <a href="https://learningmanager.adobe.com/ionovante" class="nav__link" target="_blank" rel="noopener noreferrer">Learning Portal</a>
+      </nav>
+      <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+    </header>
+
+    <main class="shell">
+      <section class="hero">
+        <div
+          class="hero-visual panel"
+          aria-label="Ionovante Aeros vehicle preview">
+          <div class="frame"></div>
+          <div class="vehicle-stage">
+            <div
+              class="vehicle-wrap"
+              id="vehicleWrap"
+              data-color="electric-blue">
+              <img
+                id="heroImage"
+                src="assets/aeros-base.jpg"
+                alt="Ionovante Aeros in selected paint color" />
+            </div>
+          </div>
+          <div class="float-card">
+            <div class="model">
+              <img src="assets/badge.png" alt="Ionovante badge" />
+              <div>
+                <div class="eyebrow">Ionovante Aeros</div>
+                <h1 id="heroTrimName">Base trim</h1>
+              </div>
+            </div>
+            <p id="heroTrimCopy">
+              A compact electric crossover for urban performance, daily driving,
+              and connected technology.
+            </p>
+            <div class="stats-row">
+              <div class="stat">
+                <div class="v" id="statHp">250</div>
+                <div class="k">hp</div>
+              </div>
+              <div class="stat">
+                <div class="v" id="statRange">240</div>
+                <div class="k">mi est.</div>
+              </div>
+              <div class="stat">
+                <div class="v" id="statZeroSixty">6.4</div>
+                <div class="k">0–60 sec</div>
+              </div>
+              <div class="stat">
+                <div class="v" id="statBattery">68</div>
+                <div class="k">kWh</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-copy panel">
+          <div class="eyebrow">Build the Aeros</div>
+          <h2>
+            Choose the trim, select a color, and compare the price as you
+            configure.
+          </h2>
+          <p class="lead">
+            Choose your Aeros configuration, colors, and options. Pricing
+            updates instantly as you build your vehicle.
+          </p>
+
+          <div class="price-band">
+            <div>
+              <div class="label">Current configured price</div>
+              <div class="value" id="currentPrice">$44,900</div>
+              <div class="sub" id="currentPriceSub">Base trim, no options</div>
+            </div>
+            <div class="price-band__right">
+              <div class="label">Current paint</div>
+              <div class="color-name" id="colorName">Electric Blue</div>
+              <div class="sub">Instant preview update</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="eyebrow swatches-heading">Paint color</div>
+            <div class="swatches" id="swatches">
+              <button
+                class="swatch-btn"
+                data-color="electric-blue"
+                data-label="Electric Blue"
+                aria-pressed="true">
+                <span class="dot" style="background: #0b78ff"></span>Electric
+                Blue
+              </button>
+              <button
+                class="swatch-btn"
+                data-color="silver"
+                data-label="Silver"
+                aria-pressed="false">
+                <span class="dot" style="background: #b9c0ca"></span>Silver
+              </button>
+              <button
+                class="swatch-btn"
+                data-color="black"
+                data-label="Black"
+                aria-pressed="false">
+                <span class="dot" style="background: #171717"></span>Black
+              </button>
+              <button
+                class="swatch-btn"
+                data-color="white"
+                data-label="White"
+                aria-pressed="false">
+                <span class="dot" style="background: #eef1f5"></span>White
+              </button>
+            </div>
+          </div>
+
+          <div class="mini-links">
+            <div class="pill">15-inch touchscreen</div>
+            <div class="pill">Adaptive cruise control</div>
+            <div class="pill">Lane keeping assist</div>
+            <div class="pill">Smart parking assist</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="stack">
+          <section class="panel">
+            <h3>Trim selection</h3>
+            <p class="subtle">
+              Excellence is the premium path and includes the long-range
+              battery. Base keeps battery and powertrain upgrades separate so
+              the customer or dealer can build up gradually.
+            </p>
+            <div class="trim-grid" id="trimGrid">
+              <button class="trim-card" data-trim="base" aria-pressed="true">
+                <div class="kicker">Starting point</div>
+                <h4>Base</h4>
+                <div class="msrp" data-base-price>$44,900</div>
+                <ul>
+                  <li>Single-motor layout</li>
+                  <li>Standard battery</li>
+                  <li>Core ADAS and infotainment</li>
+                  <li>Ideal for value-focused shoppers</li>
+                </ul>
+              </button>
+              <button
+                class="trim-card"
+                data-trim="excellence"
+                aria-pressed="false">
+                <div class="kicker">Premium choice</div>
+                <div class="flag">Includes long-range</div>
+                <h4>Excellence</h4>
+                <div class="msrp" data-excellence-price>$51,900</div>
+                <ul>
+                  <li>Long-range battery included</li>
+                  <li>Dual-motor AWD available</li>
+                  <li>Driver-assist package ready</li>
+                  <li>Premium interior and tech package</li>
+                </ul>
+              </button>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h3>Options</h3>
+            <p class="subtle">
+              Powertrain and autonomy are intentionally separate so the
+              configurator can demonstrate value and differences clearly.
+            </p>
+            <div class="option-grid">
+              <div class="option-card">
+                <div class="option-head">
+                  <div>
+                    <div class="option-title">Dual-motor AWD</div>
+                    <small id="awdState">Selectable upgrade</small>
+                  </div>
+                  <div class="option-price" id="awdPrice">+$4,000</div>
+                </div>
+                <p class="option-desc">
+                  Adds front and rear motor control for improved traction,
+                  stability, and acceleration. Available on both trims.
+                </p>
+                <div class="control-row">
+                  <button class="toggle" id="awdToggle" aria-pressed="false">
+                    Off
+                  </button>
+                  <small id="awdNote">Available on both trims</small>
+                </div>
+              </div>
+              <div class="option-card">
+                <div class="option-head">
+                  <div>
+                    <div class="option-title">Long-range battery</div>
+                    <small id="batteryState">Selectable upgrade</small>
+                  </div>
+                  <div class="option-price" id="batteryPrice">+$6,000</div>
+                </div>
+                <p class="option-desc">
+                  Upgrades the pack to the larger capacity used by Excellence
+                  and extends estimated range. Included in Excellence.
+                </p>
+                <div class="control-row">
+                  <button
+                    class="toggle"
+                    id="batteryToggle"
+                    aria-pressed="false">
+                    Off
+                  </button>
+                  <small id="batteryNote">Standard battery on Base</small>
+                </div>
+              </div>
+              <div class="option-card" style="grid-column: 1/-1">
+                <div class="option-head">
+                  <div>
+                    <div class="option-title">
+                      Autonomous / driver-assist package
+                    </div>
+                    <small
+                      >Separated from trim so it can be sold
+                      independently</small
+                    >
+                  </div>
+                  <div class="option-price" id="autonomyPrice">+$5,000</div>
+                </div>
+                <p class="option-desc">
+                  Adds Highway Assist, smart parking, a 360° camera system, and
+                  enhanced driver monitoring. It stays separate from the trim
+                  decision to keep the configurator easy to explain.
+                </p>
+                <div class="control-row">
+                  <button
+                    class="toggle"
+                    id="autonomyToggle"
+                    aria-pressed="false">
+                    Off
+                  </button>
+                  <small>Hands-on supervised assistance features</small>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h3>Configuration summary</h3>
+            <p class="subtle">
+              Your configuration summary updates instantly as you make changes.
+            </p>
+            <div class="summary-grid">
+              <div class="summary-detail">
+                <div class="eyebrow">Current vehicle</div>
+                <div class="summary-detail__title" id="summaryTitle">Aeros Base</div>
+                <div class="summary-detail__body" id="summarySub">
+                  Single-motor layout with standard battery
+                </div>
+              </div>
+              <div class="summary-detail">
+                <div class="eyebrow">Driving profile</div>
+                <div class="summary-detail__title" id="summaryPerf">
+                  250 hp • 240 mi est. • 6.4 sec
+                </div>
+                <div class="summary-detail__body" id="summaryBattery">
+                  68 kWh standard battery
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h3>Finance</h3>
+            <p class="subtle">
+              Illustrative US pricing only. Financing and lease figures are
+              estimates for comparison—not offers of credit.
+            </p>
+            <div
+              class="finance-tabs"
+              role="tablist"
+              aria-label="Finance options">
+              <button class="tab" data-finance="purchase" aria-pressed="true">
+                Purchase
+              </button>
+              <button class="tab" data-finance="lease" aria-pressed="false">
+                Lease
+              </button>
+              <button class="tab" data-finance="finance" aria-pressed="false">
+                Financing
+              </button>
+            </div>
+            <div class="finance-panel">
+              <div class="finance-grid">
+                <div class="finance-item">
+                  <div class="k" id="financeTitleLeft">Purchase price</div>
+                  <div class="v" id="financeLeftValue">$44,900</div>
+                  <div class="s" id="financeLeftSub">
+                    Configured total before taxes and fees
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <div class="k" id="financeTitleMid">Estimated monthly</div>
+                  <div class="v" id="financeMidValue">—</div>
+                  <div class="s" id="financeMidSub">
+                    Select Lease or Financing to see payments
+                  </div>
+                </div>
+                <div class="finance-item">
+                  <div class="k" id="financeTitleRight">Assumptions</div>
+                  <div class="v" id="financeRightValue">—</div>
+                  <div class="s" id="financeRightSub">
+                    Term and rate details will update here
+                  </div>
+                </div>
+              </div>
+              <div class="finance-note" id="financeNote">
+                Purchase view shows the configured total. Financing uses a
+                60-month, 6.9% APR illustrative assumption. Lease view uses a
+                36-month estimate with mileage and residual assumptions.
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <aside class="summary">
+          <section class="panel summary-card">
+            <h3>Live build total</h3>
+            <div class="total-box">
+              <div class="k">Estimated total</div>
+              <div class="v" id="liveTotal">$44,900</div>
+              <div class="s" id="liveTotalSub">
+                Base trim with no options selected
+              </div>
+            </div>
+            <ul class="summary-list" style="margin-top: 16px">
+              <li>
+                <span class="key">Trim</span
+                ><span class="val" id="summaryTrim">Base</span>
+              </li>
+              <li>
+                <span class="key">Paint</span
+                ><span class="val" id="summaryColor">Electric Blue</span>
+              </li>
+              <li>
+                <span class="key">AWD</span
+                ><span class="val" id="summaryAwd">Not selected</span>
+              </li>
+              <li>
+                <span class="key">Battery</span
+                ><span class="val" id="summaryBatteryOption">Standard</span>
+              </li>
+              <li>
+                <span class="key">Autonomy</span
+                ><span class="val" id="summaryAutonomy">Not selected</span>
+              </li>
+            </ul>
+            <div class="summary-cta" style="margin-top: 16px">
+              <button class="btn btn-primary" id="saveBtn">Save session</button>
+              <button class="btn btn-secondary" id="resetBtn">Reset</button>
+            </div>
+            <div class="hint" style="margin-top: 12px">
+              Session-based only. No account sign-in or share link is stored in
+              this first version.
+            </div>
+          </section>
+
+          <!-- <section class="panel summary-card">
+            <h3>Build notes</h3>
+            <ul class="summary-list">
+              <li>
+                <span class="key">Platform</span
+                ><span class="val">Standalone HTML/CSS/JS</span>
+              </li>
+              <li>
+                <span class="key">Image strategy</span
+                ><span class="val">Base hero + paint layer</span>
+              </li>
+              <li>
+                <span class="key">Embed mode</span
+                ><span class="val">iframe ready</span>
+              </li>
+              <li>
+                <span class="key">Audience</span
+                ><span class="val">Customers + dealers</span>
+              </li>
+            </ul>
+          </section> -->
+        </aside>
+      </section>
+
+      <p class="config-disclaimer">
+        Fictional pricing and estimates for demonstration purposes.
+      </p>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="site-footer__inner">
+        <a href="../index.html" aria-label="Ionovante Home">
+          <img src="../img/Ionovante_Logo_White.svg" alt="Ionovante" class="site-footer__logo" />
+        </a>
+        <nav class="site-footer__links" aria-label="Footer navigation">
+          <a href="../index.html" class="site-footer__link">Home</a>
+          <a href="../aeros.html" class="site-footer__link">Aeros</a>
+          <a href="../vanta.html" class="site-footer__link">Vanta</a>
+        </nav>
+        <p class="site-footer__copy">© Ionovante Automotive. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<breeze-manifest version="1.0"
+  xmlns="http://breeze.macromedia.com/ns/breeze-manifest"
+  generator="Manifest-Builder">
+  <document
+    type="custom-pod"
+    id="com.ionovante.configurator"
+    name="Ionovante Configurator"
+    vendor="Ionovante Automotive"
+    version="1.0.001"
+    description="Configure Ionovante vehicles."
+    minimumSDKversion="11.0.000"
+    minimumConnectServerVersion="11.2.0" />
+  <assets>
+    <asset type="document-view">
+      <entry href="index.htm" href-html5="index.htm" />
+      <file href="css/"/>
+      <file href="css/styles.css"/>
+      <file href="js/"/>
+      <file href="js/logic.js"/>
+      <file href="assets/"/>
+      <file href="assets/aeros-blue.png"/>
+      <file href="assets/aeros-white.png"/>
+      <file href="assets/aeros-black.png"/>
+      <file href="assets/badge.png"/>
+      <file href="assets/aeros-black.webp"/>
+      <file href="assets/aeros-base.jpg"/>
+      <file href="assets/aeros-silver.png"/>
+      <file href="assets/aeros-silver.webp"/>
+      <file href="assets/brand.png"/>
+      <file href="assets/aeros-blue.webp"/>
+      <file href="assets/aeros-white.webp"/>
+      <file href="PROJECT_BRIEF.md"/>
+      <file href="index.htm"/>
+    </asset>
+  </assets>
+</breeze-manifest>
